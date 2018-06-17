@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  build:
+    build: docker/build
+    volumes:
+      - ./app:/app

@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+nbproject
+
+/REVISION
+/vendor
+
+# TYPO3
+/web/typo3
+/web/index.php
+/web/FIRST_INSTALL
+/web/typo3conf/ENABLE_INSTALL_TOOL
+/web/typo3conf/deprecation_*
+/web/typo3conf/ext/*
+/web/fileadmin
+/web/uploads
+/web/typo3temp

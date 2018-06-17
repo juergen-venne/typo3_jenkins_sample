@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: docker/web
+    depends_on:
+      - db
+      - mailhog
+    environment:
+      - TYPO3_CONTEXT=Development
+      - TYPO3_INSTALL_TOOL_PASSWORD=joh316
+      - TYPO3_ADMIN_USER=admin
+      - TYPO3_ADMIN_PASSWORD=password
+
+      - TYPO3_DB_HOST=db
+      - TYPO3_DB_PORT=3306
+      - TYPO3_DB_USER=app
+      - TYPO3_DB_PASSWORD=app
+      - TYPO3_DB_DBNAME=app
+
+      - TYPO3_SMTP_HOST=mailhog
+      - TYPO3_SMTP_PORT=1025
+  db:
+    image: mysql:5.6
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci --init-connect='SET NAMES UTF8;'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: app
+      MYSQL_PASSWORD: app
+      MYSQL_DATABASE: app
+
+  mailhog:
+    image: mailhog/mailhog

@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  web:
+    ports:
+      - 443:443
+      - 80:80
+    environment:
+      XDEBUG_CONFIG: remote_host=docker.for.mac.host.internal idekey=PHPSTORM
+
+  db:
+    ports:
+      - 3306:3306
+
+  mailhog:
+    ports:
+      - 8025:8025

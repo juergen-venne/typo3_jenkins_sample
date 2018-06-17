@@ -1,0 +1,16 @@
+# ide
+.project
+.buildpath
+.settings
+.nbproject
+.idea
+
+.php_cs.cache
+
+# docker
+/docker-compose.override.yml
+/docker-compose.build.override.yml
+
+# node
+node_modules
+

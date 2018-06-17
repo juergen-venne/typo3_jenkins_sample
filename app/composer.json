@@ -1,0 +1,15 @@
+{
+    "require": {
+        "typo3/minimal": "^9.3",
+        "helhum/typo3-console": "^5.3"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2",
+            "ext-xml": "1",
+            "ext-dom": "1",
+            "ext-simplexml": "1",
+            "ext-xmlwriter": "1"
+        }
+    }
+}

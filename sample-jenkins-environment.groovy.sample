@@ -1,0 +1,9 @@
+// Replace dockerdemo.example.com by $
+
+env.DOCKER_REGISTRY_URL="registry.dockerdemo.example.com"
+env.DOCKER_REGISTRY_CREDENTIALS_ID="sample-docker-registry-login"
+
+env.DEMO_SERVER_HOSTNAME="dockerdemo.example.com"
+env.DEMO_BASIC_AUTH="admin:\$apr1\$OJZORqMa\$PvP.GeBOvsnn1MQMbE10L/"
+env.DEMO_DOCKER_HOST_URI="tcp://dockerdemo.example.com:2376"
+env.DEMO_DOCKER_CREDENTIALS_ID="sample-docker-demo-login"
