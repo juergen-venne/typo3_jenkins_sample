@@ -1,7 +1,9 @@
 {
     "require": {
         "typo3/minimal": "^9.3",
-        "helhum/typo3-console": "^5.3"
+        "helhum/typo3-console": "^5.3",
+        "typo3/cms-info": "^9.3",
+        "typo3/cms-beuser": "^9.3"
     },
     "config": {
         "platform": {
